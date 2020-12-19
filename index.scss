@@ -1,0 +1,755 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h3,h4,h5{
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+li{
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:6vh;
+    object-fit: cover;
+    padding: 1rem 2rem 0 1rem;
+    .navlinks{
+        display: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    i{
+        color: rgb(41, 41, 41);
+    }
+    img{
+        width: 35vw;
+    }
+}
+
+.homepage{
+    .hero{
+        .small{
+            width: 100vw;
+            height: 45vh;
+            object-fit: cover;
+        }
+        .medium{
+            display: none;
+        }
+        .large{
+            display: none;
+        }
+    }
+    .about{
+        .aboutbox{
+            width: 80%;
+            height: 28vh;
+            position: absolute;
+            background-color:#67362D;
+            margin: 10% 13%;
+            z-index: -2;
+        }
+        .imageabout{
+            width: 80vw;
+            height: 27.7vh;
+            margin: 8% 10.8%;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+        .aboutcontent{
+            text-align: center;
+            margin: 2% 10% 10%;
+            position: relative;
+            img{
+                position: absolute;
+                left:10px;
+                top: -3vh;
+                width: 42vw;
+            }
+            h3{
+                margin-bottom: 0.8rem;
+                margin-top: 3.7rem;
+            }
+            .socials{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0.8rem 5rem;
+            }
+        }
+    }
+    .blogRecent{
+        text-align: center;
+        .blog{
+            width: 30%;
+            cursor: pointer;
+            margin-bottom: 1rem;
+
+        }
+        .posts{
+            .post{
+                cursor: pointer;
+                position: relative;
+                img{
+                    width: 80%;
+                    height: 30vh;
+                    object-fit: cover;
+                    margin-left: 0.8rem;
+                    margin-top: 0.8rem;
+                }
+                .postbox{
+                    width: 80%;
+                    height: 30vh;
+                    left: 1.8rem;
+                    background-color: #947765;
+                    position: absolute;
+                    z-index: -2;
+                }
+                .postDescription{
+                    margin: 0.7rem 0 1.5rem;
+                }
+            }
+        }
+        .blogfull{
+            display: none;
+            cursor: pointer;
+        }
+    }
+    .subscribeSection{
+        overflow: hidden;
+        background-color: #5A757C;
+        height: 35vh;
+        position: relative;
+        .subscribeSquiggle{
+            position: absolute;
+            top:0%;
+            width: 40vw;
+            height: 100%;
+            left:75%;
+        }
+        .subscribeContent{
+            margin-top: 6rem;
+            color: white;
+            font-weight: lighter;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p{
+                font-size: 0.8rem;
+            }
+            
+            input[type='text']{
+                margin: 0.5rem 0 1rem;
+                background-color: transparent;
+                border: white 2px solid;
+                padding:0.4rem;
+                width: 60%;
+                font-size: 1rem;
+                color: white;
+                outline: none;
+            }
+            button{
+                background-color: white;
+                padding: 0.5rem 0.9rem;
+                border: none;
+                color:#5a757ccb;
+                border-radius: 5px;
+            }
+        }
+        img{
+            position: absolute;
+            top:5%;
+            left:7%;
+            width: 43%;
+        }
+    }
+
+    .sectionsSection{
+        text-align: center;
+        margin-top: 1rem;
+        .section{
+            .lifestyle, .recipies{
+                width: 40%;
+                cursor: pointer;
+                margin-bottom: 1rem;
+            }
+            .subSections{
+                cursor: pointer;
+                position: relative;
+                .subSection{
+                    img{
+                        width: 80%;
+                        height: 30vh;
+                        object-fit: cover;
+                        margin-left: 4.5%;
+                        margin-top: 4.5%;
+                    }
+                    .postbox{
+                        width: 80%;
+                        height: 30vh;
+                        left: 1.8rem;
+                        background-color: #947765;
+                        position: absolute;
+                        z-index: -2;
+                    }
+                    h4{
+                        margin: 0.7rem 0 1.5rem;
+                    }
+                }
+            }
+            .lifestylefull{
+                display: none;
+            }
+        }
+    }
+    .favBrands{
+        text-align: center;
+        margin: 0 10%;
+        .favBrands{
+                width: 50%;
+                cursor: pointer;
+                margin-bottom: 1rem;
+        }
+        .logos{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 18%;
+            }
+        }
+    }
+
+    .wave{
+        width: 110%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        height: 15vh;
+        .vj{
+            width: 50px;
+        }
+
+        .links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 0.7rem;
+                li{
+                    font-size: 0.85rem;
+                    margin-right:1rem;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 400px){
+    .homepage{
+        .hero{
+            .small{
+                display: none;
+            }
+            .medium{
+                width: 100%;
+                height: 55vh;
+                object-fit: cover;
+                display: block;
+            }
+            .large{
+                display: none;
+            }
+        }
+        
+        .about{
+            .aboutcontent{
+                h3{
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+        .blogRecent{
+            .blog{
+                width: 28%;
+            }
+            .posts{
+                .post{
+                    img{
+                        width: 77%;
+                        margin-left: 0rem;
+                    }
+                    .postbox{
+                        width: 77%;
+                        height: 30vh;
+                        left: 2.5rem;
+                        background-color: #947765;
+                        position: absolute;
+                        z-index: -2;
+                    }
+                    .postDescription{
+                        margin: 0.7rem 0 1.5rem;
+                    }
+                }
+            }
+            .blogfull{
+                display: none;
+            }
+        }
+        .sectionsSection{
+            .section{
+                .lifestyle, .recipies{
+                    width: 28%;
+                }
+                .subSections{
+                    .subSection{
+                        img{
+                            width: 77%;
+                            margin-bottom: 0rem;
+                            margin-right: 1.1rem;
+                        }
+                        .postbox{
+                            width: 77%;
+                            height: 30vh;
+                            left: 2.5rem;
+                            margin-top: 0.5rem;
+                            background-color: #947765;
+                            position: absolute;
+                            z-index: -2;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .favBrands{
+            .favBrandsTitle{
+                width: 33vw;
+            }
+        }
+    }
+}
+@media (min-width: 600px){
+    nav{
+        height:8vh;
+        img{
+            width: 30vw;
+        }
+    }
+    .homepage{
+        .hero{
+            .medium{
+                height: 65vh;
+            }
+        }
+        .about{
+            .aboutbox{
+                width: 80%;
+                height: 35vh;
+                position: absolute;
+                background-color:#67362D;
+                margin: 10% 13%;
+                z-index: -2;
+    
+            }
+            .aboutcontent{
+                h3{
+                    margin-bottom: 0.8rem;
+                    margin-top: 6.5rem;
+                }
+                .socials{
+                    margin: 0.8rem 8rem;
+                }
+            }
+            .imageabout{
+                height: 35vh;
+            }
+        }
+        .blogRecent{
+            margin: 0 8%;
+            .posts{
+                .post{
+                    .postbox{
+                        left: 7vw;
+                    }
+                    img{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+        .subscribeSection{
+            .subscribeContent{
+                p{
+                    font-size: 1rem;
+                }
+                
+                input[type='text']{
+                    width: 55%;
+                }
+            }
+            img{
+                top:-3%;
+                left:7%;
+                width: 39%;
+            }
+        }
+    }
+}
+@media (min-width: 700px){
+    .homepage{
+        .hero{
+            .medium{
+                height: 80vh;
+            }
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5% 8%;
+            .aboutbox{
+                width: 39vw;
+                height: 50vh;
+                margin: 4% 2% 0%;
+                z-index: -2;
+    
+            }
+            .imageabout{
+                width: 39vw;
+                height: 50vh;
+                margin: 0%;
+    
+            }
+            .aboutcontent{
+                width: 40%;
+                margin: 2%;
+                img{
+                    position: absolute;
+                    left:-1px;
+                    top: -1vh;
+                    width: 30vw;
+                }
+                h3{
+                    margin-top: 7rem;
+                }
+                .socials{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0.8rem 2rem;
+                }
+            }
+        }
+        .blogRecent{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem 2rem;
+            .blog{
+                display: none;
+            }
+            .posts{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 83%;
+                .post{
+                    width:26vw;
+                    .postbox{
+                        width: 20vw;
+                    }
+                    img{
+                        width: 20vw;
+                    }
+                }
+            }
+            .blogfull{
+                display: block;
+                width: 15%;
+                margin-bottom: 10vh;
+            }
+        }
+        .subscribeSection{
+            .subscribeSquiggle{
+                width: 20vw;
+                height: 100%;
+                left:85%;
+            }
+            .subscribeContent{
+                input[type='text']{
+                    width: 50%;
+                }
+            }
+            img{
+                top:-3.5%;
+                left:6%;
+                width: 33%;
+            }
+        }
+        .favBrands{
+            .favBrandsTitle{
+                width: 25vw;
+            }
+        }
+        footer{
+            .vj{
+                width: 50px;
+            }
+    
+            .links{
+                width: 70%;
+                flex-direction: row;
+                ul{
+                    width: 100%;
+                    margin-top: 0;
+                    li{
+                        font-size: 0.9rem;
+                        margin-right:0.5rem;
+                    }
+                }
+                .socials{
+                    margin-left: 2rem;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 900px){
+    nav{
+        height:10vh;
+        .navlinks{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+        .burger{
+            display: none;
+        }
+        img{
+            width: 20vw;
+        }
+    }
+    .homepage{
+        .hero{
+            .small{
+                display: none;
+            }
+            .medium{
+                display: none;
+            }
+            .large{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        .about{
+            .aboutcontent{
+                h3{
+                    margin-top: 9rem;
+                }
+            }
+        }
+        .blogRecent{
+            .posts{
+                .post{
+                    .postbox{
+                        height: 35vh;
+                    }
+                    img{
+                        height: 35vh;
+                    }
+                }
+            }
+            .blogfull{
+                width: 12vw;
+            }
+        }
+        .favBrands{
+            margin-top: 2rem;
+            .favBrandsTitle{
+                width: 20vw;
+            }
+            .logos{
+                margin: 2vh 10vw;
+                img{
+                    width: 10vw;
+                }
+            }
+        }
+        .wave{
+            height: 15vh;
+        }
+        footer{
+            .links{
+                width: 50%;
+                
+            }
+        }
+    }
+}
+@media (min-width: 1020px){
+    .homepage{
+        .blogRecent{
+            .posts{
+                .post{
+                    .postbox{
+                        height: 40vh;
+                        left: 4.5vw;
+                    }
+                    img{
+                        height: 40vh;
+                    }
+                }
+            }
+            .blogfull{
+                width: 12vw;
+                margin-right: 2rem;
+            }
+        }
+        .subscribeSection{
+            .subscribeSquiggle{
+                width: 15vw;
+                height: 100%;
+                left:87%;
+            }
+            .subscribeContent{
+                p{
+                    font-size: 1.2rem;
+                }
+                
+                input[type='text']{
+                    width: 45%;
+                }
+                button{
+                    padding: 0.5rem 1.3rem;
+                }
+            }
+            img{
+                top:-3%;
+                left:7%;
+                width: 28%;
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    nav{
+        padding: 1rem 8rem 0 1rem;
+        .navlinks{
+            width: 40%;
+        }
+    }
+    .homepage{
+        .about{
+            .aboutcontent{
+                img{
+                    left:-7px;
+                    top: -4vh;
+                    width: 25vw;
+                }
+            }
+        }
+        .blogRecent{
+            .posts{
+                .post{
+                    .postbox{
+                        height: 53vh;
+                        left: 4.5vw;
+                    }
+                    img{
+                        margin-top: 1rem;
+                        height: 53vh;
+                    }
+                }
+            }
+            .blogfull{
+                width: 11vw;
+                margin-right: 2rem;
+            }
+        }
+        footer{
+    
+            .links{
+                width: 45%;
+                flex-direction: row;
+                ul{
+                    width: 100%;
+                    margin-top: 0;
+                    li{
+                        font-size: 0.9rem;
+                        margin-right:0.5rem;
+                    }
+                }
+                .socials{
+                    margin-left: 3rem;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1360px){
+
+    .homepage{
+        .about{
+            .aboutcontent{
+                img{
+                    left:-1px;
+                    top: -5vh;
+                }
+            }
+        }
+        .subscribeSection{
+            .subscribeContent{
+                p{
+                    font-size: 1.2rem;
+                }
+                
+                input[type='text']{
+                    width: 30%;
+                }
+            }
+            img{
+                position: absolute;
+                top:-3%;
+                left:15%;
+                width: 23%;
+            }
+        }
+    }
+}

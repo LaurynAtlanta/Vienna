@@ -1,0 +1,763 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h3, h4, h5 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+li {
+  font-family: 'Jost', sans-serif;
+}
+
+nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 6vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 1rem 2rem 0 1rem;
+}
+
+nav .navlinks {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+nav i {
+  color: #292929;
+}
+
+nav img {
+  width: 35vw;
+}
+
+.homepage .hero .small {
+  width: 100vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homepage .hero .medium {
+  display: none;
+}
+
+.homepage .hero .large {
+  display: none;
+}
+
+.homepage .about .aboutbox {
+  width: 80%;
+  height: 28vh;
+  position: absolute;
+  background-color: #67362D;
+  margin: 10% 13%;
+  z-index: -2;
+}
+
+.homepage .about .imageabout {
+  width: 80vw;
+  height: 27.7vh;
+  margin: 8% 10.8%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.homepage .about .imageabout img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homepage .about .aboutcontent {
+  text-align: center;
+  margin: 2% 10% 10%;
+  position: relative;
+}
+
+.homepage .about .aboutcontent img {
+  position: absolute;
+  left: 10px;
+  top: -3vh;
+  width: 42vw;
+}
+
+.homepage .about .aboutcontent h3 {
+  margin-bottom: 0.8rem;
+  margin-top: 3.7rem;
+}
+
+.homepage .about .aboutcontent .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.8rem 5rem;
+}
+
+.homepage .blogRecent {
+  text-align: center;
+}
+
+.homepage .blogRecent .blog {
+  width: 30%;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.homepage .blogRecent .posts .post {
+  cursor: pointer;
+  position: relative;
+}
+
+.homepage .blogRecent .posts .post img {
+  width: 80%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.homepage .blogRecent .posts .post .postbox {
+  width: 80%;
+  height: 30vh;
+  left: 1.8rem;
+  background-color: #947765;
+  position: absolute;
+  z-index: -2;
+}
+
+.homepage .blogRecent .posts .post .postDescription {
+  margin: 0.7rem 0 1.5rem;
+}
+
+.homepage .blogRecent .blogfull {
+  display: none;
+  cursor: pointer;
+}
+
+.homepage .subscribeSection {
+  overflow: hidden;
+  background-color: #5A757C;
+  height: 35vh;
+  position: relative;
+}
+
+.homepage .subscribeSection .subscribeSquiggle {
+  position: absolute;
+  top: 0%;
+  width: 40vw;
+  height: 100%;
+  left: 75%;
+}
+
+.homepage .subscribeSection .subscribeContent {
+  margin-top: 6rem;
+  color: white;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homepage .subscribeSection .subscribeContent p {
+  font-size: 0.8rem;
+}
+
+.homepage .subscribeSection .subscribeContent input[type='text'] {
+  margin: 0.5rem 0 1rem;
+  background-color: transparent;
+  border: white 2px solid;
+  padding: 0.4rem;
+  width: 60%;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+}
+
+.homepage .subscribeSection .subscribeContent button {
+  background-color: white;
+  padding: 0.5rem 0.9rem;
+  border: none;
+  color: #5a757ccb;
+  border-radius: 5px;
+}
+
+.homepage .subscribeSection img {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 43%;
+}
+
+.homepage .sectionsSection {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.homepage .sectionsSection .section .lifestyle, .homepage .sectionsSection .section .recipies {
+  width: 40%;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.homepage .sectionsSection .section .subSections {
+  cursor: pointer;
+  position: relative;
+}
+
+.homepage .sectionsSection .section .subSections .subSection img {
+  width: 80%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 4.5%;
+  margin-top: 4.5%;
+}
+
+.homepage .sectionsSection .section .subSections .subSection .postbox {
+  width: 80%;
+  height: 30vh;
+  left: 1.8rem;
+  background-color: #947765;
+  position: absolute;
+  z-index: -2;
+}
+
+.homepage .sectionsSection .section .subSections .subSection h4 {
+  margin: 0.7rem 0 1.5rem;
+}
+
+.homepage .sectionsSection .section .lifestylefull {
+  display: none;
+}
+
+.homepage .favBrands {
+  text-align: center;
+  margin: 0 10%;
+}
+
+.homepage .favBrands .favBrands {
+  width: 50%;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.homepage .favBrands .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .favBrands .logos img {
+  width: 18%;
+}
+
+.homepage .wave {
+  width: 110%;
+}
+
+.homepage footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+  height: 15vh;
+}
+
+.homepage footer .vj {
+  width: 50px;
+}
+
+.homepage footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homepage footer .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.7rem;
+}
+
+.homepage footer .links ul li {
+  font-size: 0.85rem;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+@media (min-width: 400px) {
+  .homepage .hero .small {
+    display: none;
+  }
+  .homepage .hero .medium {
+    width: 100%;
+    height: 55vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .homepage .hero .large {
+    display: none;
+  }
+  .homepage .about .aboutcontent h3 {
+    margin-top: 5rem;
+  }
+  .homepage .blogRecent .blog {
+    width: 28%;
+  }
+  .homepage .blogRecent .posts .post img {
+    width: 77%;
+    margin-left: 0rem;
+  }
+  .homepage .blogRecent .posts .post .postbox {
+    width: 77%;
+    height: 30vh;
+    left: 2.5rem;
+    background-color: #947765;
+    position: absolute;
+    z-index: -2;
+  }
+  .homepage .blogRecent .posts .post .postDescription {
+    margin: 0.7rem 0 1.5rem;
+  }
+  .homepage .blogRecent .blogfull {
+    display: none;
+  }
+  .homepage .sectionsSection .section .lifestyle, .homepage .sectionsSection .section .recipies {
+    width: 28%;
+  }
+  .homepage .sectionsSection .section .subSections .subSection img {
+    width: 77%;
+    margin-bottom: 0rem;
+    margin-right: 1.1rem;
+  }
+  .homepage .sectionsSection .section .subSections .subSection .postbox {
+    width: 77%;
+    height: 30vh;
+    left: 2.5rem;
+    margin-top: 0.5rem;
+    background-color: #947765;
+    position: absolute;
+    z-index: -2;
+  }
+  .homepage .favBrands .favBrandsTitle {
+    width: 33vw;
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
+    height: 8vh;
+  }
+  nav img {
+    width: 30vw;
+  }
+  .homepage .hero .medium {
+    height: 65vh;
+  }
+  .homepage .about .aboutbox {
+    width: 80%;
+    height: 35vh;
+    position: absolute;
+    background-color: #67362D;
+    margin: 10% 13%;
+    z-index: -2;
+  }
+  .homepage .about .aboutcontent h3 {
+    margin-bottom: 0.8rem;
+    margin-top: 6.5rem;
+  }
+  .homepage .about .aboutcontent .socials {
+    margin: 0.8rem 8rem;
+  }
+  .homepage .about .imageabout {
+    height: 35vh;
+  }
+  .homepage .blogRecent {
+    margin: 0 8%;
+  }
+  .homepage .blogRecent .posts .post .postbox {
+    left: 7vw;
+  }
+  .homepage .blogRecent .posts .post img {
+    margin-top: 1rem;
+  }
+  .homepage .subscribeSection .subscribeContent p {
+    font-size: 1rem;
+  }
+  .homepage .subscribeSection .subscribeContent input[type='text'] {
+    width: 55%;
+  }
+  .homepage .subscribeSection img {
+    top: -3%;
+    left: 7%;
+    width: 39%;
+  }
+}
+
+@media (min-width: 700px) {
+  .homepage .hero .medium {
+    height: 80vh;
+  }
+  .homepage .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5% 8%;
+  }
+  .homepage .about .aboutbox {
+    width: 39vw;
+    height: 50vh;
+    margin: 4% 2% 0%;
+    z-index: -2;
+  }
+  .homepage .about .imageabout {
+    width: 39vw;
+    height: 50vh;
+    margin: 0%;
+  }
+  .homepage .about .aboutcontent {
+    width: 40%;
+    margin: 2%;
+  }
+  .homepage .about .aboutcontent img {
+    position: absolute;
+    left: -1px;
+    top: -1vh;
+    width: 30vw;
+  }
+  .homepage .about .aboutcontent h3 {
+    margin-top: 7rem;
+  }
+  .homepage .about .aboutcontent .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0.8rem 2rem;
+  }
+  .homepage .blogRecent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5rem 2rem;
+  }
+  .homepage .blogRecent .blog {
+    display: none;
+  }
+  .homepage .blogRecent .posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 83%;
+  }
+  .homepage .blogRecent .posts .post {
+    width: 26vw;
+  }
+  .homepage .blogRecent .posts .post .postbox {
+    width: 20vw;
+  }
+  .homepage .blogRecent .posts .post img {
+    width: 20vw;
+  }
+  .homepage .blogRecent .blogfull {
+    display: block;
+    width: 15%;
+    margin-bottom: 10vh;
+  }
+  .homepage .subscribeSection .subscribeSquiggle {
+    width: 20vw;
+    height: 100%;
+    left: 85%;
+  }
+  .homepage .subscribeSection .subscribeContent input[type='text'] {
+    width: 50%;
+  }
+  .homepage .subscribeSection img {
+    top: -3.5%;
+    left: 6%;
+    width: 33%;
+  }
+  .homepage .favBrands .favBrandsTitle {
+    width: 25vw;
+  }
+  .homepage footer .vj {
+    width: 50px;
+  }
+  .homepage footer .links {
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .homepage footer .links ul {
+    width: 100%;
+    margin-top: 0;
+  }
+  .homepage footer .links ul li {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  .homepage footer .links .socials {
+    margin-left: 2rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+    height: 10vh;
+  }
+  nav .navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .burger {
+    display: none;
+  }
+  nav img {
+    width: 20vw;
+  }
+  .homepage .hero .small {
+    display: none;
+  }
+  .homepage .hero .medium {
+    display: none;
+  }
+  .homepage .hero .large {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .homepage .about .aboutcontent h3 {
+    margin-top: 9rem;
+  }
+  .homepage .blogRecent .posts .post .postbox {
+    height: 35vh;
+  }
+  .homepage .blogRecent .posts .post img {
+    height: 35vh;
+  }
+  .homepage .blogRecent .blogfull {
+    width: 12vw;
+  }
+  .homepage .favBrands {
+    margin-top: 2rem;
+  }
+  .homepage .favBrands .favBrandsTitle {
+    width: 20vw;
+  }
+  .homepage .favBrands .logos {
+    margin: 2vh 10vw;
+  }
+  .homepage .favBrands .logos img {
+    width: 10vw;
+  }
+  .homepage .wave {
+    height: 15vh;
+  }
+  .homepage footer .links {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .homepage .blogRecent .posts .post .postbox {
+    height: 40vh;
+    left: 4.5vw;
+  }
+  .homepage .blogRecent .posts .post img {
+    height: 40vh;
+  }
+  .homepage .blogRecent .blogfull {
+    width: 12vw;
+    margin-right: 2rem;
+  }
+  .homepage .subscribeSection .subscribeSquiggle {
+    width: 15vw;
+    height: 100%;
+    left: 87%;
+  }
+  .homepage .subscribeSection .subscribeContent p {
+    font-size: 1.2rem;
+  }
+  .homepage .subscribeSection .subscribeContent input[type='text'] {
+    width: 45%;
+  }
+  .homepage .subscribeSection .subscribeContent button {
+    padding: 0.5rem 1.3rem;
+  }
+  .homepage .subscribeSection img {
+    top: -3%;
+    left: 7%;
+    width: 28%;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 1rem 8rem 0 1rem;
+  }
+  nav .navlinks {
+    width: 40%;
+  }
+  .homepage .about .aboutcontent img {
+    left: -7px;
+    top: -4vh;
+    width: 25vw;
+  }
+  .homepage .blogRecent .posts .post .postbox {
+    height: 53vh;
+    left: 4.5vw;
+  }
+  .homepage .blogRecent .posts .post img {
+    margin-top: 1rem;
+    height: 53vh;
+  }
+  .homepage .blogRecent .blogfull {
+    width: 11vw;
+    margin-right: 2rem;
+  }
+  .homepage footer .links {
+    width: 45%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .homepage footer .links ul {
+    width: 100%;
+    margin-top: 0;
+  }
+  .homepage footer .links ul li {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  .homepage footer .links .socials {
+    margin-left: 3rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1360px) {
+  .homepage .about .aboutcontent img {
+    left: -1px;
+    top: -5vh;
+  }
+  .homepage .subscribeSection .subscribeContent p {
+    font-size: 1.2rem;
+  }
+  .homepage .subscribeSection .subscribeContent input[type='text'] {
+    width: 30%;
+  }
+  .homepage .subscribeSection img {
+    position: absolute;
+    top: -3%;
+    left: 15%;
+    width: 23%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
