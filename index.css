@@ -96,7 +96,7 @@ nav img {
 
 .homepage .about .aboutcontent {
   text-align: center;
-  margin: 2% 10% 10%;
+  margin: 2% 10% 8%;
   position: relative;
 }
 
@@ -208,7 +208,7 @@ nav img {
 .homepage .subscribeSection .subscribeContent input[type='text'] {
   margin: 0.5rem 0 1rem;
   background-color: transparent;
-  border: white 2px solid;
+  border: white 3px solid;
   padding: 0.4rem;
   width: 60%;
   font-size: 1rem;
@@ -233,11 +233,11 @@ nav img {
 
 .homepage .sectionsSection {
   text-align: center;
-  margin-top: 1rem;
+  margin: 3% 5%;
 }
 
 .homepage .sectionsSection .section .lifestyle, .homepage .sectionsSection .section .recipies {
-  width: 40%;
+  width: 30%;
   cursor: pointer;
   margin-bottom: 1rem;
 }
@@ -247,13 +247,18 @@ nav img {
   position: relative;
 }
 
+.homepage .sectionsSection .section .subSections .subSection {
+  cursor: pointer;
+  position: relative;
+}
+
 .homepage .sectionsSection .section .subSections .subSection img {
   width: 80%;
   height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 4.5%;
-  margin-top: 4.5%;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .homepage .sectionsSection .section .subSections .subSection .postbox {
@@ -270,6 +275,11 @@ nav img {
 }
 
 .homepage .sectionsSection .section .lifestylefull {
+  display: none;
+  cursor: pointer;
+}
+
+.homepage .sectionsSection .recipiesSection {
   display: none;
 }
 
@@ -375,7 +385,7 @@ nav img {
     margin-top: 5rem;
   }
   .homepage .blogRecent .blog {
-    width: 28%;
+    width: 22%;
   }
   .homepage .blogRecent .posts .post img {
     width: 77%;
@@ -389,25 +399,17 @@ nav img {
     position: absolute;
     z-index: -2;
   }
-  .homepage .blogRecent .posts .post .postDescription {
-    margin: 0.7rem 0 1.5rem;
-  }
-  .homepage .blogRecent .blogfull {
-    display: none;
-  }
   .homepage .sectionsSection .section .lifestyle, .homepage .sectionsSection .section .recipies {
     width: 28%;
   }
   .homepage .sectionsSection .section .subSections .subSection img {
     width: 77%;
     margin-bottom: 0rem;
-    margin-right: 1.1rem;
   }
   .homepage .sectionsSection .section .subSections .subSection .postbox {
     width: 77%;
     height: 30vh;
     left: 2.5rem;
-    margin-top: 0.5rem;
     background-color: #947765;
     position: absolute;
     z-index: -2;
@@ -465,6 +467,15 @@ nav img {
     left: 7%;
     width: 39%;
   }
+  .homepage .sectionsSection .section {
+    margin: 0 8%;
+  }
+  .homepage .sectionsSection .section .subSections .subSection img {
+    margin-top: 1rem;
+  }
+  .homepage .sectionsSection .section .subSections .subSection .postbox {
+    left: 7vw;
+  }
 }
 
 @media (min-width: 700px) {
@@ -481,7 +492,7 @@ nav img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 5% 8%;
+    margin: 5% 8% 10%;
   }
   .homepage .about .aboutbox {
     width: 39vw;
@@ -517,7 +528,7 @@ nav img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0.8rem 2rem;
+    margin: 0.8rem 3rem;
   }
   .homepage .blogRecent {
     display: -webkit-box;
@@ -572,6 +583,50 @@ nav img {
     top: -3.5%;
     left: 6%;
     width: 33%;
+  }
+  .homepage .sectionsSection .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4rem 2rem 1rem;
+  }
+  .homepage .sectionsSection .section .lifestyle, .homepage .sectionsSection .section .recipies {
+    display: none;
+  }
+  .homepage .sectionsSection .section .subSections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 83%;
+  }
+  .homepage .sectionsSection .section .subSections .subSection {
+    width: 26vw;
+  }
+  .homepage .sectionsSection .section .subSections .subSection img {
+    width: 20vw;
+  }
+  .homepage .sectionsSection .section .subSections .subSection .postbox {
+    width: 20vw;
+  }
+  .homepage .sectionsSection .section .lifestylefull, .homepage .sectionsSection .section .recipiesfull {
+    display: block;
+    width: 10%;
+    margin-bottom: 10vh;
+  }
+  .homepage .sectionsSection .recipiesSection {
+    display: none;
   }
   .homepage .favBrands .favBrandsTitle {
     width: 25vw;
@@ -635,6 +690,12 @@ nav img {
   .homepage .about .aboutcontent h3 {
     margin-top: 9rem;
   }
+  .homepage .about .aboutcontent .socials {
+    margin: 0.8rem 6rem;
+  }
+  .homepage .blogRecent {
+    margin: 5rem 4rem;
+  }
   .homepage .blogRecent .posts .post .postbox {
     height: 35vh;
   }
@@ -643,6 +704,18 @@ nav img {
   }
   .homepage .blogRecent .blogfull {
     width: 12vw;
+  }
+  .homepage .sectionsSection {
+    margin: 1rem 4rem;
+  }
+  .homepage .sectionsSection .section .subSections .subSection img {
+    height: 35vh;
+  }
+  .homepage .sectionsSection .section .subSections .subSection .postbox {
+    height: 35vh;
+  }
+  .homepage .sectionsSection .section .lifestylefull, .homepage .sectionsSection .section .recipiesfull {
+    width: 8vw;
   }
   .homepage .favBrands {
     margin-top: 2rem;
@@ -667,13 +740,12 @@ nav img {
 @media (min-width: 1020px) {
   .homepage .blogRecent .posts .post .postbox {
     height: 40vh;
-    left: 4.5vw;
+    left: 4vw;
   }
   .homepage .blogRecent .posts .post img {
     height: 40vh;
   }
   .homepage .blogRecent .blogfull {
-    width: 12vw;
     margin-right: 2rem;
   }
   .homepage .subscribeSection .subscribeSquiggle {
@@ -685,7 +757,7 @@ nav img {
     font-size: 1.2rem;
   }
   .homepage .subscribeSection .subscribeContent input[type='text'] {
-    width: 45%;
+    width: 35%;
   }
   .homepage .subscribeSection .subscribeContent button {
     padding: 0.5rem 1.3rem;
@@ -693,7 +765,17 @@ nav img {
   .homepage .subscribeSection img {
     top: -3%;
     left: 7%;
-    width: 28%;
+    width: 24%;
+  }
+  .homepage .sectionsSection .section .subSections .subSection img {
+    height: 40vh;
+  }
+  .homepage .sectionsSection .section .subSections .subSection .postbox {
+    height: 40vh;
+    left: 4vw;
+  }
+  .homepage .sectionsSection .section .lifestylefull, .homepage .sectionsSection .section .recipiesfull {
+    margin-right: 2rem;
   }
 }
 
@@ -709,17 +791,40 @@ nav img {
     top: -4vh;
     width: 25vw;
   }
+  .homepage .about .aboutcontent .socials {
+    margin: 0.8rem 9rem;
+  }
   .homepage .blogRecent .posts .post .postbox {
     height: 53vh;
-    left: 4.5vw;
+    left: 4vw;
   }
   .homepage .blogRecent .posts .post img {
     margin-top: 1rem;
     height: 53vh;
   }
   .homepage .blogRecent .blogfull {
-    width: 11vw;
+    width: 9.5vw;
     margin-right: 2rem;
+  }
+  .homepage .sectionsSection .section .subSections .subSection img {
+    margin-top: 1rem;
+    height: 53vh;
+  }
+  .homepage .sectionsSection .section .subSections .subSection .postbox {
+    height: 53vh;
+    left: 4vw;
+  }
+  .homepage .sectionsSection .section .lifestylefull, .homepage .sectionsSection .section .recipiesfull {
+    margin-right: 2rem;
+  }
+  .homepage .favBrands .favBrandsTitle {
+    width: 20vw;
+  }
+  .homepage .favBrands .logos {
+    margin: 2vh 15vw;
+  }
+  .homepage .favBrands .logos img {
+    width: 8vw;
   }
   .homepage footer .links {
     width: 45%;
@@ -746,18 +851,6 @@ nav img {
   .homepage .about .aboutcontent img {
     left: -1px;
     top: -5vh;
-  }
-  .homepage .subscribeSection .subscribeContent p {
-    font-size: 1.2rem;
-  }
-  .homepage .subscribeSection .subscribeContent input[type='text'] {
-    width: 30%;
-  }
-  .homepage .subscribeSection img {
-    position: absolute;
-    top: -3%;
-    left: 15%;
-    width: 23%;
   }
 }
 /*# sourceMappingURL=index.css.map */

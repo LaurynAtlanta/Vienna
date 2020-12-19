@@ -78,7 +78,7 @@ nav{
         }
         .aboutcontent{
             text-align: center;
-            margin: 2% 10% 10%;
+            margin: 2% 10% 8%;
             position: relative;
             img{
                 position: absolute;
@@ -162,7 +162,7 @@ nav{
             input[type='text']{
                 margin: 0.5rem 0 1rem;
                 background-color: transparent;
-                border: white 2px solid;
+                border: white 3px solid;
                 padding:0.4rem;
                 width: 60%;
                 font-size: 1rem;
@@ -187,10 +187,10 @@ nav{
 
     .sectionsSection{
         text-align: center;
-        margin-top: 1rem;
+        margin: 3% 5%;
         .section{
             .lifestyle, .recipies{
-                width: 40%;
+                width: 30%;
                 cursor: pointer;
                 margin-bottom: 1rem;
             }
@@ -198,12 +198,14 @@ nav{
                 cursor: pointer;
                 position: relative;
                 .subSection{
+                    cursor: pointer;
+                    position: relative;
                     img{
                         width: 80%;
                         height: 30vh;
                         object-fit: cover;
-                        margin-left: 4.5%;
-                        margin-top: 4.5%;
+                        margin-left: 0.8rem;
+                        margin-top: 0.8rem;
                     }
                     .postbox{
                         width: 80%;
@@ -220,7 +222,11 @@ nav{
             }
             .lifestylefull{
                 display: none;
+                cursor: pointer;
             }
+        }
+        .recipiesSection{
+            display: none;
         }
     }
     .favBrands{
@@ -275,6 +281,25 @@ nav{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ================================================================
+// 400
+// ================================================================
+
+
 @media (min-width: 400px){
     .homepage{
         .hero{
@@ -302,7 +327,7 @@ nav{
 
         .blogRecent{
             .blog{
-                width: 28%;
+                width: 22%;
             }
             .posts{
                 .post{
@@ -318,13 +343,7 @@ nav{
                         position: absolute;
                         z-index: -2;
                     }
-                    .postDescription{
-                        margin: 0.7rem 0 1.5rem;
-                    }
                 }
-            }
-            .blogfull{
-                display: none;
             }
         }
         .sectionsSection{
@@ -337,17 +356,14 @@ nav{
                         img{
                             width: 77%;
                             margin-bottom: 0rem;
-                            margin-right: 1.1rem;
                         }
                         .postbox{
                             width: 77%;
                             height: 30vh;
                             left: 2.5rem;
-                            margin-top: 0.5rem;
                             background-color: #947765;
                             position: absolute;
                             z-index: -2;
-                            
                         }
                     }
                 }
@@ -360,6 +376,14 @@ nav{
         }
     }
 }
+
+
+// ================================================================
+// 600
+// ================================================================
+
+
+
 @media (min-width: 600px){
     nav{
         height:8vh;
@@ -425,8 +449,30 @@ nav{
                 width: 39%;
             }
         }
+        .sectionsSection{
+            .section{
+                margin: 0 8%;
+                .subSections{
+                    .subSection{
+                        img{
+                            margin-top: 1rem;
+                        }
+                        .postbox{
+                            left: 7vw;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
+
+// ================================================================
+// 700
+// ================================================================
+
+
 @media (min-width: 700px){
     .homepage{
         .hero{
@@ -438,7 +484,7 @@ nav{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 5% 8%;
+            margin: 5% 8% 10%;
             .aboutbox{
                 width: 39vw;
                 height: 50vh;
@@ -468,7 +514,7 @@ nav{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    margin: 0.8rem 2rem;
+                    margin: 0.8rem 3rem;
                 }
             }
         }
@@ -501,6 +547,8 @@ nav{
                 margin-bottom: 10vh;
             }
         }
+
+        
         .subscribeSection{
             .subscribeSquiggle{
                 width: 20vw;
@@ -518,6 +566,46 @@ nav{
                 width: 33%;
             }
         }
+
+        .sectionsSection{
+            .section{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 4rem 2rem 1rem;
+
+                .lifestyle, .recipies{
+                    display: none;
+                }
+
+                .subSections{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    width: 83%;
+
+                    .subSection{
+                        width:26vw;
+                        img{
+                            width: 20vw;
+                        }
+                        .postbox{
+                            width: 20vw;
+                            
+                        }
+                    }
+                }
+                .lifestylefull, .recipiesfull{
+                    display: block;
+                    width: 10%;
+                    margin-bottom: 10vh;
+                }
+            }
+            .recipiesSection{
+                display: none;
+            }
+        }
+
         .favBrands{
             .favBrandsTitle{
                 width: 25vw;
@@ -547,6 +635,17 @@ nav{
         }
     }
 }
+
+
+
+
+
+
+// ================================================================
+// 900
+// ================================================================
+
+
 @media (min-width: 900px){
     nav{
         height:10vh;
@@ -582,9 +681,13 @@ nav{
                 h3{
                     margin-top: 9rem;
                 }
+                .socials{
+                    margin: 0.8rem 6rem;
+                }
             }
         }
         .blogRecent{
+            margin: 5rem 4rem;
             .posts{
                 .post{
                     .postbox{
@@ -599,6 +702,25 @@ nav{
                 width: 12vw;
             }
         }
+        .sectionsSection{
+            margin: 1rem 4rem;
+            .section{
+                .subSections{
+                    .subSection{
+                        img{
+                            height: 35vh;
+                        }
+                        .postbox{
+                            height: 35vh;
+                        }
+                    }
+                }
+                .lifestylefull, .recipiesfull{
+                    width: 8vw;
+                }
+            }
+        }
+
         .favBrands{
             margin-top: 2rem;
             .favBrandsTitle{
@@ -622,6 +744,16 @@ nav{
         }
     }
 }
+
+
+
+
+
+// ================================================================
+// 1020
+// ================================================================
+
+
 @media (min-width: 1020px){
     .homepage{
         .blogRecent{
@@ -629,7 +761,7 @@ nav{
                 .post{
                     .postbox{
                         height: 40vh;
-                        left: 4.5vw;
+                        left: 4vw;
                     }
                     img{
                         height: 40vh;
@@ -637,7 +769,6 @@ nav{
                 }
             }
             .blogfull{
-                width: 12vw;
                 margin-right: 2rem;
             }
         }
@@ -653,7 +784,7 @@ nav{
                 }
                 
                 input[type='text']{
-                    width: 45%;
+                    width: 35%;
                 }
                 button{
                     padding: 0.5rem 1.3rem;
@@ -662,11 +793,39 @@ nav{
             img{
                 top:-3%;
                 left:7%;
-                width: 28%;
+                width: 24%;
+            }
+        }
+        .sectionsSection{
+            .section{
+                .subSections{
+                    .subSection{
+                        img{
+                            height: 40vh;
+                        }
+                        .postbox{
+                            height: 40vh;
+                            left: 4vw;
+                        }
+                    }
+                }
+                .lifestylefull, .recipiesfull{
+                    margin-right: 2rem;
+                }
             }
         }
     }
 }
+
+
+
+
+
+
+// ================================================================
+// 1200
+// ================================================================
+
 @media (min-width: 1200px){
     nav{
         padding: 1rem 8rem 0 1rem;
@@ -682,6 +841,9 @@ nav{
                     top: -4vh;
                     width: 25vw;
                 }
+                .socials{
+                    margin: 0.8rem 9rem;
+                }
             }
         }
         .blogRecent{
@@ -689,7 +851,7 @@ nav{
                 .post{
                     .postbox{
                         height: 53vh;
-                        left: 4.5vw;
+                        left: 4vw;
                     }
                     img{
                         margin-top: 1rem;
@@ -698,8 +860,38 @@ nav{
                 }
             }
             .blogfull{
-                width: 11vw;
+                width: 9.5vw;
                 margin-right: 2rem;
+            }
+        }
+        .sectionsSection{
+            .section{
+                .subSections{
+                    .subSection{
+                        img{
+                            margin-top: 1rem;
+                            height: 53vh;
+                        }
+                        .postbox{
+                            height: 53vh;
+                            left: 4vw;
+                        }
+                    }
+                }
+                .lifestylefull, .recipiesfull{
+                    margin-right: 2rem;
+                }
+            }
+        }
+        .favBrands{
+            .favBrandsTitle{
+                width: 20vw;
+            }
+            .logos{
+                margin: 2vh 15vw;
+                img{
+                    width: 8vw;
+                }
             }
         }
         footer{
@@ -723,6 +915,15 @@ nav{
         }
     }
 }
+
+
+
+
+// ================================================================
+// 1360
+// ================================================================
+
+
 @media (min-width: 1360px){
 
     .homepage{
@@ -732,23 +933,6 @@ nav{
                     left:-1px;
                     top: -5vh;
                 }
-            }
-        }
-        .subscribeSection{
-            .subscribeContent{
-                p{
-                    font-size: 1.2rem;
-                }
-                
-                input[type='text']{
-                    width: 30%;
-                }
-            }
-            img{
-                position: absolute;
-                top:-3%;
-                left:15%;
-                width: 23%;
             }
         }
     }
