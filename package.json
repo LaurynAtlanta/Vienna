@@ -1,0 +1,19 @@
+{
+  "name": "vienna",
+  "version": "1.0.0",
+  "description": "Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurynAtlanta/Vienna.git"
+  },
+  "author": "Lauryn Mills",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurynAtlanta/Vienna/issues"
+  },
+  "homepage": "https://github.com/LaurynAtlanta/Vienna#readme"
+}

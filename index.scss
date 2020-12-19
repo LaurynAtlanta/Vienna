@@ -25,14 +25,22 @@ nav{
     height:6vh;
     object-fit: cover;
     padding: 1rem 2rem 0 1rem;
+    .burger{
+        i{
+            font-size: 1.4rem;
+            color: rgb(37, 37, 37);
+        }
+    }
     .navlinks{
         display: none;
         text-transform: uppercase;
         font-weight: 500;
         opacity: 0.8;
-    }
-    i{
-        color: rgb(41, 41, 41);
+        letter-spacing: 0.15rem;
+        a{
+            color:rgb(12, 12, 12);
+            text-decoration: none;
+        }
     }
     img{
         width: 35vw;
@@ -55,7 +63,7 @@ nav{
     }
     .about{
         .aboutbox{
-            width: 80%;
+            width: 75%;
             height: 28vh;
             position: absolute;
             background-color:#67362D;
@@ -63,7 +71,7 @@ nav{
             z-index: -2;
         }
         .imageabout{
-            width: 80vw;
+            width: 75vw;
             height: 27.7vh;
             margin: 8% 10.8%;
             cursor: pointer;
@@ -187,7 +195,6 @@ nav{
 
     .sectionsSection{
         text-align: center;
-        margin: 3% 5%;
         .section{
             .lifestyle, .recipies{
                 width: 30%;
@@ -360,7 +367,7 @@ nav{
                         .postbox{
                             width: 77%;
                             height: 30vh;
-                            left: 2.5rem;
+                            left: 3rem;
                             background-color: #947765;
                             position: absolute;
                             z-index: -2;
@@ -399,7 +406,7 @@ nav{
         }
         .about{
             .aboutbox{
-                width: 80%;
+                width: 75%;
                 height: 35vh;
                 position: absolute;
                 background-color:#67362D;
@@ -451,14 +458,13 @@ nav{
         }
         .sectionsSection{
             .section{
-                margin: 0 8%;
                 .subSections{
                     .subSection{
                         img{
                             margin-top: 1rem;
                         }
                         .postbox{
-                            left: 7vw;
+                            left: 9vw;
                         }
                     }
                 }
@@ -648,34 +654,13 @@ nav{
 
 @media (min-width: 900px){
     nav{
-        height:10vh;
-        .navlinks{
-            display: flex;
-            width: 50%;
-            justify-content: space-between;
-        }
-        .burger{
-            display: none;
-        }
+        height:8vh;
+        padding: 1rem 4rem 0 1rem;
         img{
             width: 20vw;
         }
     }
     .homepage{
-        .hero{
-            .small{
-                display: none;
-            }
-            .medium{
-                display: none;
-            }
-            .large{
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                display: block;
-            }
-        }
         .about{
             .aboutcontent{
                 h3{
@@ -687,7 +672,7 @@ nav{
             }
         }
         .blogRecent{
-            margin: 5rem 4rem;
+            margin: 3rem 4rem;
             .posts{
                 .post{
                     .postbox{
@@ -703,7 +688,6 @@ nav{
             }
         }
         .sectionsSection{
-            margin: 1rem 4rem;
             .section{
                 .subSections{
                     .subSection{
@@ -712,6 +696,7 @@ nav{
                         }
                         .postbox{
                             height: 35vh;
+
                         }
                     }
                 }
@@ -755,7 +740,35 @@ nav{
 
 
 @media (min-width: 1020px){
+    nav{
+        height:10vh;
+        .navlinks{
+            display: flex;
+            width: 53%;
+            justify-content: space-between;
+        }
+        .burger{
+            display: none;
+        }
+        img{
+            width: 20vw;
+        }
+    }
     .homepage{
+        .hero{
+            .small{
+                display: none;
+            }
+            .medium{
+                display: none;
+            }
+            .large{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                display: block;
+            }
+        }
         .blogRecent{
             .posts{
                 .post{
@@ -805,7 +818,7 @@ nav{
                         }
                         .postbox{
                             height: 40vh;
-                            left: 4vw;
+                            left: 5vw;
                         }
                     }
                 }
@@ -830,7 +843,7 @@ nav{
     nav{
         padding: 1rem 8rem 0 1rem;
         .navlinks{
-            width: 40%;
+            width: 47%;
         }
     }
     .homepage{
@@ -874,7 +887,7 @@ nav{
                         }
                         .postbox{
                             height: 53vh;
-                            left: 4vw;
+                            left: 5vw;
                         }
                     }
                 }
@@ -932,6 +945,9 @@ nav{
                 img{
                     left:-1px;
                     top: -5vh;
+                }
+                h3{
+                    font-size: 1.5rem;
                 }
             }
         }
