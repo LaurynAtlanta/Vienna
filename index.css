@@ -49,7 +49,7 @@ nav .navlinks {
   text-transform: uppercase;
   font-weight: 500;
   opacity: 0.8;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.10rem;
 }
 
 nav .navlinks a {
@@ -179,6 +179,10 @@ nav img {
   background-color: #5A757C;
   height: 35vh;
   position: relative;
+}
+
+.homepage .subscribeSection .subscribePhotoSection {
+  display: none;
 }
 
 .homepage .subscribeSection .subscribeSquiggle {
@@ -390,6 +394,9 @@ nav img {
   .homepage .about .aboutcontent h3 {
     margin-top: 5rem;
   }
+  .homepage .about .aboutcontent .socials {
+    margin: 0.8rem 9rem;
+  }
   .homepage .blogRecent .blog {
     width: 22%;
   }
@@ -446,9 +453,6 @@ nav img {
   .homepage .about .aboutcontent h3 {
     margin-bottom: 0.8rem;
     margin-top: 6.5rem;
-  }
-  .homepage .about .aboutcontent .socials {
-    margin: 0.8rem 8rem;
   }
   .homepage .about .imageabout {
     height: 35vh;
@@ -634,6 +638,9 @@ nav img {
   .homepage .favBrands .favBrandsTitle {
     width: 25vw;
   }
+  .homepage .wave {
+    height: 12vh;
+  }
   .homepage footer .vj {
     width: 50px;
   }
@@ -755,10 +762,45 @@ nav img {
   .homepage .blogRecent .blogfull {
     margin-right: 2rem;
   }
+  .homepage .subscribeSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .homepage .subscribeSection .subscribeSquiggle {
     width: 15vw;
     height: 100%;
     left: 87%;
+  }
+  .homepage .subscribeSection .subscribePhotoSection {
+    display: block;
+  }
+  .homepage .subscribeSection .subscribePhotoSection img {
+    margin-top: 2.9rem;
+    margin-left: 2rem;
+    width: 20%;
+    height: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 2;
+  }
+  .homepage .subscribeSection .subscribePhotoSection .subscribeBox {
+    background-color: white;
+    width: 20%;
+    height: 75%;
+    position: absolute;
+    left: 7.5%;
+    top: 11%;
+  }
+  .homepage .subscribeSection .subscribeContent {
+    margin-top: 4rem;
+    width: 80%;
   }
   .homepage .subscribeSection .subscribeContent p {
     font-size: 1.2rem;
@@ -769,9 +811,9 @@ nav img {
   .homepage .subscribeSection .subscribeContent button {
     padding: 0.5rem 1.3rem;
   }
-  .homepage .subscribeSection img {
-    top: -3%;
-    left: 7%;
+  .homepage .subscribeSection .subscribeContent img {
+    top: -1%;
+    left: 30%;
     width: 24%;
   }
   .homepage .sectionsSection .section .subSections .subSection img {
@@ -812,6 +854,17 @@ nav img {
   .homepage .blogRecent .blogfull {
     width: 9.5vw;
     margin-right: 2rem;
+  }
+  .homepage .subscribeSection .subscribePhotoSection img {
+    margin-top: 2.9rem;
+    margin-left: 2rem;
+  }
+  .homepage .subscribeSection .subscribePhotoSection .subscribeBox {
+    left: 7%;
+    top: 10%;
+  }
+  .homepage .subscribeSection .subscribeContent img {
+    width: 22%;
   }
   .homepage .sectionsSection .section .subSections .subSection img {
     margin-top: 1rem;
