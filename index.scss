@@ -49,7 +49,7 @@ nav{
 
 .homepage{
     .hero{
-        .small{
+        .small, .test{
             width: 100vw;
             height: 45vh;
             object-fit: cover;
@@ -169,22 +169,28 @@ nav{
             p{
                 font-size: 0.8rem;
             }
-            
-            input[type='text']{
-                margin: 0.5rem 0 1rem;
-                background-color: transparent;
-                border: white 3px solid;
-                padding:0.4rem;
-                width: 60%;
-                font-size: 1rem;
-                color: white;
-                outline: none;
-            }
-            button{
-                background-color: white;
-                padding: 0.5rem 0.9rem;
-                border: none;
-                color:#5a757c;
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                input[type='text']{
+                    margin: 0.5rem 0 1rem;
+                    background-color: transparent;
+                    border: white 3px solid;
+                    padding:0.4rem;
+                    width: 60%;
+                    font-size: 1rem;
+                    color: white;
+                    outline: none;
+                }
+                button{
+                    background-color: white;
+                    padding: 0.5rem 0.9rem;
+                    border: none;
+                    color:#5a757c;
+                }
             }
         }
         img{
@@ -316,7 +322,7 @@ nav{
             .small{
                 display: none;
             }
-            .medium{
+            .medium, .test{
                 width: 100%;
                 height: 55vh;
                 object-fit: cover;
@@ -406,7 +412,7 @@ nav{
     }
     .homepage{
         .hero{
-            .medium{
+            .medium, .test{
                 height: 65vh;
             }
         }
@@ -485,7 +491,7 @@ nav{
 @media (min-width: 700px){
     .homepage{
         .hero{
-            .medium{
+            .medium, .test{
                 height: 80vh;
             }
         }
@@ -770,7 +776,7 @@ nav{
             .medium{
                 display: none;
             }
-            .large{
+            .large, .test{
                 width: 100%;
                 height: 100vh;
                 object-fit: cover;
@@ -922,7 +928,8 @@ nav{
             }
             .subscribeContent{
                 img{
-                    width: 22%;
+                    width: 19%;
+                    left:37%;
                 }
             }
         }
