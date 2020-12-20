@@ -184,8 +184,7 @@ nav{
                 background-color: white;
                 padding: 0.5rem 0.9rem;
                 border: none;
-                color:#5a757ccb;
-                border-radius: 5px;
+                color:#5a757c;
             }
         }
         img{
@@ -197,6 +196,7 @@ nav{
     }
 
     .sectionsSection{
+        display: none;
         text-align: center;
         .section{
             .lifestyle, .recipies{
@@ -241,7 +241,7 @@ nav{
     }
     .favBrands{
         text-align: center;
-        margin: 0 10%;
+        margin: 8% 10% 0%;
         .favBrands{
                 width: 50%;
                 cursor: pointer;
@@ -577,6 +577,8 @@ nav{
         }
 
         .sectionsSection{
+
+            display: block;
             .section{
                 display: flex;
                 justify-content: space-between;
@@ -796,15 +798,15 @@ nav{
             justify-content: space-between;
             align-items: center;
             .subscribeSquiggle{
-                width: 15vw;
-                height: 100%;
-                left:87%;
+                width: 30vw;
+                height: 110%;
+                left:81%;
             }
             .subscribePhotoSection{
                 display: block;
                 img{
                     margin-top: 2.9rem;
-                    margin-left: 2rem;
+                    margin-left: 5rem;
                     width: 20%;
                     height: 75%;
                     object-fit: cover;
@@ -815,26 +817,26 @@ nav{
                     width: 20%;
                     height: 75%;
                     position: absolute;
-                    left:7.5%;
+                    left:12%;
                     top:11%;
                 }
             }
             .subscribeContent{
                 margin-top: 4rem;
-                width: 80%;
+                width: 65%;
                 p{
                     font-size: 1.2rem;
                 }
                 
                 input[type='text']{
-                    width: 35%;
+                    width: 44%;
                 }
                 button{
                     padding: 0.5rem 1.3rem;
                 }
                 img{
                     top:-1%;
-                    left:30%;
+                    left:39%;
                     width: 24%;
                 }
             }
@@ -911,10 +913,10 @@ nav{
             .subscribePhotoSection{
                 img{
                     margin-top: 2.9rem;
-                    margin-left: 2rem;
+                    margin-left: 5rem;
                 }
                 .subscribeBox{
-                    left:7%;
+                    left:10.5%;
                     top:10%;
                 }
             }
@@ -926,6 +928,7 @@ nav{
         }
         .sectionsSection{
             .section{
+                margin-top: 7rem;
                 .subSections{
                     .subSection{
                         img{
