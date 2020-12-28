@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    line-height: 1.3rem;
+}
+li{
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:6vh;
+    object-fit: cover;
+    padding: 1rem 2rem 0 1rem;
+    .burger{
+        i{
+            font-size: 1.4rem;
+            color: rgb(37, 37, 37);
+        }
+    }
+    .navlinks{
+        display: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        opacity: 0.8;
+        letter-spacing: 0.10rem;
+        a{
+            color:rgb(12, 12, 12);
+            text-decoration: none;
+        }
+    }
+    img{
+        width: 35vw;
+    }
+}
+.Page{
+    .Hero{
+        overflow: hidden;
+        position: relative;
+        margin-top: 9vh;
+        height: 20vh;
+        width: 100vw;
+        .lifestyleHero, .recipesHero{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 0px -55px;
+        }
+        .fashionHero{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 0px -120px;
+        }
+
+        h2{
+            position: absolute;
+            top:35%;
+            left:7%;
+            color: white;
+            letter-spacing: 0.12rem;
+        }
+    }
+    .posts{
+        margin: 0% 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .post{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 7%;
+            width: 100%;
+            position: relative;
+            background-color: #c1bcb823;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(90, 90, 90, 0.151);
+            img{
+                height: 28vh;
+                flex: 1;
+                object-fit: cover;
+            }
+            .postContent{
+                padding: 0 5%;
+                flex: 1;
+                h2{
+                    font-size: 17px;
+                }
+                button{
+                    background-color: #6D3C2E;
+                    color: white;
+                    border: none;
+                    padding: 0.4rem;
+                    margin-top: 0.5rem;
+                    font-size: 0.6rem;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.wave{
+    width: 110%;
+    height: 70px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 15vh;
+    .vj{
+        width: 50px;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.7rem;
+            li{
+                font-size: 0.85rem;
+                margin-right:1rem;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+
+// ================================================================
+// 600
+// ================================================================
+
+
+@media (min-width: 600px){
+    nav{
+        height:8vh;
+        img{
+            width: 30vw;
+        }
+    }
+    .Page{
+        .Hero{
+            height: 25vh;
+            width: 100vw;
+            .lifestyleHero, .recipesHero{
+                object-position: 0px -150px;
+            }
+            .fashionHero{
+                object-position: 0px -180px;
+            }
+            h2{
+                font-size: 2rem;
+                letter-spacing: 0.14rem;
+            }
+        }
+        .posts{
+            margin: 0 13%;
+        }
+    }
+    .wave{
+        height: 90px;
+    }
+}
+
+@media (min-width: 700px){
+    footer{
+        .vj{
+            width: 50px;
+        }
+
+        .links{
+            width: 70%;
+            flex-direction: row;
+            ul{
+                width: 100%;
+                margin-top: 0;
+                li{
+                    font-size: 0.9rem;
+                    margin-right:0.5rem;
+                }
+            }
+            .socials{
+                margin-left: 2rem;
+                width: 50%;
+            }
+        }
+    }
+}
+
+// ================================================================
+// 900
+// ================================================================
+
+
+@media (min-width: 900px){
+    nav{
+        height:8vh;
+        padding: 1rem 4rem 0 1rem;
+        img{
+            width: 20vw;
+        }
+    }
+    .Page{
+        .Hero{
+            .fashionHero{
+                object-position: 0px -250px;
+            }
+        }
+    }
+    footer{
+        .links{
+            width: 50%;
+            
+        }
+    }
+}
+
+// ================================================================
+// 1020
+// ================================================================
+
+
+@media (min-width: 1020px){
+    nav{
+        height:10vh;
+        .navlinks{
+            display: flex;
+            width: 53%;
+            justify-content: space-between;
+        }
+        .burger{
+            display: none;
+        }
+        img{
+            width: 20vw;
+        }
+    }
+    .Page{
+        .Hero{
+            margin-top: 12vh;
+            .lifestyleHero, .recipesHero{
+                object-position: 0px -200px;
+            }
+            .fashionHero{
+                object-position: 0px -270px;
+            }
+            h2{
+                font-size: 2.1rem;
+                letter-spacing: 0.14rem;
+            }
+        }
+        .posts{
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            margin: 0 10%;
+            .post{
+                width: 38vw;
+                margin-top: 8vh;
+            }
+        }
+    }
+}
+
+// ================================================================
+// 1200
+// ================================================================
+
+
+@media (min-width: 1200px){
+    nav{
+        padding: 1rem 8rem 0 1rem;
+        .navlinks{
+            width: 47%;
+        }
+    }
+    .Page{
+        .Hero{
+            .lifestyleHero, .recipesHero{
+                object-position: 0px -330px;
+            }
+            .fashionHero{
+                object-position: 0px -420px;
+            }
+            h2{
+                font-size: 2.3rem;
+                letter-spacing: 0.25rem;
+            }
+        }
+    }
+    .wave{
+        height: 120px;
+    }
+    footer{
+    
+        .links{
+            width: 45%;
+            flex-direction: row;
+            ul{
+                width: 100%;
+                margin-top: 0;
+                li{
+                    font-size: 0.9rem;
+                    margin-right:0.5rem;
+                }
+            }
+            .socials{
+                margin-left: 3rem;
+                width: 50%;
+            }
+        }
+    }
+}

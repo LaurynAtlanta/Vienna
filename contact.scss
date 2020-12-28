@@ -1,0 +1,44 @@
+@media (min-width: 600px){
+    nav{
+        height:8vh;
+        img{
+            width: 30vw;
+        }
+    }
+}
+
+@media (min-width: 900px){
+    nav{
+        height:8vh;
+        padding: 1rem 4rem 0 1rem;
+        img{
+            width: 20vw;
+        }
+    }
+}
+
+@media (min-width: 1020px){
+    nav{
+        height:10vh;
+        .navlinks{
+            display: flex;
+            width: 53%;
+            justify-content: space-between;
+        }
+        .burger{
+            display: none;
+        }
+        img{
+            width: 20vw;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    nav{
+        padding: 1rem 8rem 0 1rem;
+        .navlinks{
+            width: 47%;
+        }
+    }
+}

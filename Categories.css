@@ -61,7 +61,7 @@ nav img {
   width: 35vw;
 }
 
-.lifestylePage .lifestyleHero {
+.Page .Hero {
   overflow: hidden;
   position: relative;
   margin-top: 9vh;
@@ -69,7 +69,7 @@ nav img {
   width: 100vw;
 }
 
-.lifestylePage .lifestyleHero img {
+.Page .Hero .lifestyleHero, .Page .Hero .recipesHero {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -78,7 +78,16 @@ nav img {
      object-position: 0px -55px;
 }
 
-.lifestylePage .lifestyleHero h2 {
+.Page .Hero .fashionHero {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px -120px;
+     object-position: 0px -120px;
+}
+
+.Page .Hero h2 {
   position: absolute;
   top: 35%;
   left: 7%;
@@ -86,7 +95,7 @@ nav img {
   letter-spacing: 0.12rem;
 }
 
-.lifestylePage .posts {
+.Page .posts {
   margin: 0% 7%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +112,7 @@ nav img {
           flex-direction: column;
 }
 
-.lifestylePage .posts .post {
+.Page .posts .post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,11 +127,11 @@ nav img {
   position: relative;
   background-color: #c1bcb823;
   cursor: pointer;
-  -webkit-box-shadow: 10px 5px 10px rgba(90, 90, 90, 0.151);
-          box-shadow: 10px 5px 10px rgba(90, 90, 90, 0.151);
+  -webkit-box-shadow: 2px 2px 10px rgba(90, 90, 90, 0.151);
+          box-shadow: 2px 2px 10px rgba(90, 90, 90, 0.151);
 }
 
-.lifestylePage .posts .post img {
+.Page .posts .post img {
   height: 28vh;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -131,18 +140,18 @@ nav img {
      object-fit: cover;
 }
 
-.lifestylePage .posts .post .postContent {
+.Page .posts .post .postContent {
   padding: 0 5%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.lifestylePage .posts .post .postContent h2 {
+.Page .posts .post .postContent h2 {
   font-size: 17px;
 }
 
-.lifestylePage .posts .post .postContent button {
+.Page .posts .post .postContent button {
   background-color: #6D3C2E;
   color: white;
   border: none;
@@ -212,18 +221,167 @@ footer .links ul li {
 }
 
 @media (min-width: 600px) {
-  .lifestylePage .lifestyleHero {
+  nav {
+    height: 8vh;
+  }
+  nav img {
+    width: 30vw;
+  }
+  .Page .Hero {
     height: 25vh;
     width: 100vw;
   }
-  .lifestylePage .lifestyleHero img {
-    height: 100%;
-    width: 100%;
+  .Page .Hero .lifestyleHero, .Page .Hero .recipesHero {
     -o-object-position: 0px -150px;
        object-position: 0px -150px;
   }
-  .lifestylePage .posts {
+  .Page .Hero .fashionHero {
+    -o-object-position: 0px -180px;
+       object-position: 0px -180px;
+  }
+  .Page .Hero h2 {
+    font-size: 2rem;
+    letter-spacing: 0.14rem;
+  }
+  .Page .posts {
     margin: 0 13%;
   }
+  .wave {
+    height: 90px;
+  }
 }
-/*# sourceMappingURL=lifestyle.css.map */
+
+@media (min-width: 700px) {
+  footer .vj {
+    width: 50px;
+  }
+  footer .links {
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .links ul {
+    width: 100%;
+    margin-top: 0;
+  }
+  footer .links ul li {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  footer .links .socials {
+    margin-left: 2rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+    height: 8vh;
+    padding: 1rem 4rem 0 1rem;
+  }
+  nav img {
+    width: 20vw;
+  }
+  .Page .Hero .fashionHero {
+    -o-object-position: 0px -250px;
+       object-position: 0px -250px;
+  }
+  footer .links {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1020px) {
+  nav {
+    height: 10vh;
+  }
+  nav .navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 53%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .burger {
+    display: none;
+  }
+  nav img {
+    width: 20vw;
+  }
+  .Page .Hero {
+    margin-top: 12vh;
+  }
+  .Page .Hero .lifestyleHero, .Page .Hero .recipesHero {
+    -o-object-position: 0px -200px;
+       object-position: 0px -200px;
+  }
+  .Page .Hero .fashionHero {
+    -o-object-position: 0px -270px;
+       object-position: 0px -270px;
+  }
+  .Page .Hero h2 {
+    font-size: 2.1rem;
+    letter-spacing: 0.14rem;
+  }
+  .Page .posts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 10%;
+  }
+  .Page .posts .post {
+    width: 38vw;
+    margin-top: 8vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 1rem 8rem 0 1rem;
+  }
+  nav .navlinks {
+    width: 47%;
+  }
+  .Page .Hero .lifestyleHero, .Page .Hero .recipesHero {
+    -o-object-position: 0px -330px;
+       object-position: 0px -330px;
+  }
+  .Page .Hero .fashionHero {
+    -o-object-position: 0px -420px;
+       object-position: 0px -420px;
+  }
+  .Page .Hero h2 {
+    font-size: 2.3rem;
+    letter-spacing: 0.25rem;
+  }
+  .wave {
+    height: 120px;
+  }
+  footer .links {
+    width: 45%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .links ul {
+    width: 100%;
+    margin-top: 0;
+  }
+  footer .links ul li {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  footer .links .socials {
+    margin-left: 3rem;
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=Categories.css.map */
