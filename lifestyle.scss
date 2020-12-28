@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    line-height: 1.3rem;
+}
+li{
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:6vh;
+    object-fit: cover;
+    padding: 1rem 2rem 0 1rem;
+    .burger{
+        i{
+            font-size: 1.4rem;
+            color: rgb(37, 37, 37);
+        }
+    }
+    .navlinks{
+        display: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        opacity: 0.8;
+        letter-spacing: 0.10rem;
+        a{
+            color:rgb(12, 12, 12);
+            text-decoration: none;
+        }
+    }
+    img{
+        width: 35vw;
+    }
+}
+.lifestylePage{
+    .lifestyleHero{
+        overflow: hidden;
+        position: relative;
+        margin-top: 9vh;
+        height: 20vh;
+        width: 100vw;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 0px -55px;
+        }
+
+        h2{
+            position: absolute;
+            top:35%;
+            left:7%;
+            color: white;
+            letter-spacing: 0.12rem;
+        }
+    }
+    .posts{
+        margin: 0% 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .post{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 7%;
+            width: 100%;
+            position: relative;
+            background-color: #c1bcb823;
+            cursor: pointer;
+            box-shadow: 10px 5px 10px rgba(90, 90, 90, 0.151);
+            img{
+                height: 28vh;
+                flex: 1;
+                object-fit: cover;
+            }
+            .postContent{
+                padding: 0 5%;
+                flex: 1;
+                h2{
+                    font-size: 17px;
+                }
+                button{
+                    background-color: #6D3C2E;
+                    color: white;
+                    border: none;
+                    padding: 0.4rem;
+                    margin-top: 0.5rem;
+                    font-size: 0.6rem;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.wave{
+    width: 110%;
+    height: 70px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 15vh;
+    .vj{
+        width: 50px;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.7rem;
+            li{
+                font-size: 0.85rem;
+                margin-right:1rem;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+    .lifestylePage{
+        .lifestyleHero{
+            height: 25vh;
+            width: 100vw;
+            img{
+                height: 100%;
+                width: 100%;
+                object-position: 0px -150px;
+            }
+        }
+        .posts{
+            margin: 0 13%;
+        }
+    }
+}
