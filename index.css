@@ -748,11 +748,8 @@ nav img {
     width: 20vw;
   }
   .homepage .hero .test {
-    width: 100%;
-    height: 100vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-    display: block;
+    -o-object-position: 0 -420px;
+       object-position: 0 -420px;
   }
   .homepage .blogRecent .posts .post .postbox {
     height: 40vh;

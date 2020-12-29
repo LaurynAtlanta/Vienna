@@ -759,14 +759,29 @@ nav{
         }
     }
     .homepage{
+        // .hero{
+        //     position: relative;
+        //     left: 23%;
+        //     top: 13vh;
+        //     width: 80%;
+        //     height: 87vh;
+        //     z-index: -1;
+
+        //     .test{
+        //         width: 100%;
+        //         height: 100%;
+        //         object-fit: cover;
+        //         display: block;
+        //         object-position: 0 -420px;
+
+        //     }
+        // }
         .hero{
             .test{
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                display: block;
+                object-position: 0 -420px;
             }
         }
+
         .blogRecent{
             .posts{
                 .post{
